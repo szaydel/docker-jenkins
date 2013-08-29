@@ -1,6 +1,6 @@
 # docker-jenkins
 
-Sets up a container with jenkins installed listening on port 8080.
+Sets up a container with jenkins installed listening on port 8080. Several changes have been made to address specific needs of RackTop systems. As such, this is probably not useful for most users. Consider looking at the upstream which is quite a bit more generic.
 
 ## Usage
 
@@ -22,7 +22,7 @@ Your jenkins instance is now available by going to http://localhost:49153 .
 To build the image, simply invoke
 
 ```
-docker build github.com/aespinosa/docker-jenkins
+docker build github.com/szaydel/docker-jenkins
 ```
 
 A prebuilt container is also available in the docker index
@@ -37,6 +37,7 @@ docker pull aespinosa/jenkins
 
   * Allan Espinosa (<allan.espinosa@outlook.com>)
   * Gwenn Etourneau
+  * Sam Zaydel (<szaydel@gmail.com>)
 
 ## LICENSE
 
